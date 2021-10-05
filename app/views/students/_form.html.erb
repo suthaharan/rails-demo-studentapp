@@ -1,0 +1,31 @@
+<%= error_messages_for(f.object) %>
+<table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row">Teacher ID</th>
+        <td><%= f.text_field(:teacher_id, class: 'form-control', autofocus: true, placeholder: 'Teacher ID') %></td>
+      </tr>
+        <tr>
+          <th scope="row">Name</th>
+          <td><%= f.text_field(:name, class: 'form-control', autofocus: true, placeholder: 'Name') %></td>
+        </tr>
+        <tr>
+          <th scope="row">Position</th>
+          <td><%= f.text_field(:position, class: 'form-control', placeholder: 'Position') %></td>
+        </tr>
+        <tr>
+          <th scope="row">Status</th>
+          <td><%= f.text_field(:active, class: 'form-control', placeholder: 'Status') %></td>
+        </tr>
+        <tr>
+          <th scope="row">Content</th>
+          <td><%= f.text_area(:content, :rows=>10, :column=>60, class: 'form-control', placeholder: 'Content') %></td>
+        </tr>
+      </tbody>
+    </table>

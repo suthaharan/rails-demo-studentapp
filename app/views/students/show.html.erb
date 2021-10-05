@@ -1,0 +1,33 @@
+<h1>Students#show</h1>
+<p><%= link_to('List Students', students_path, :class=> 'back-link') %></p>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Name</th>
+      <td><%= @student.name %></td>
+    </tr>
+    <tr>
+      <th scope="row">Position</th>
+      <td><%= @student.position %></td>
+    </tr>
+    <tr>
+      <th scope="row">Status</th>
+      <td><%= @student.active ? 'Active':'Inactive' %></td>
+    </tr>
+    <tr>
+      <th scope="row">Created</th>
+      <td><%= @student.created_at %></td>
+    </tr>
+    <tr>
+      <th scope="row">Updated</th>
+      <td><%= @student.updated_at %></td>
+    </tr>
+  </tbody>
+</table>

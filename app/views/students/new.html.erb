@@ -1,0 +1,9 @@
+<h1>Create New Student</h1>
+<%= @student %>
+<%= form_for(@student, :url => students_path, :method => 'post') do |f| %>
+  <%= render(:partial => 'form', :locals => {:f => f}) %>
+<div class="form-buttons">
+    <%= f.submit("Create Student") %>
+</div>
+
+<% end %>

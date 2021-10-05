@@ -1,0 +1,24 @@
+<%= error_messages_for(f.object) %>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Name</th>
+      <td><%= f.text_field(:name, class: 'form-control', autofocus: true, placeholder: 'Name') %></td>
+    </tr>
+    <tr>
+      <th scope="row">Position</th>
+      <td><%= f.text_field(:position, class: 'form-control', placeholder: 'Position') %></td>
+    </tr>
+    <tr>
+      <th scope="row">Status</th>
+      <td><%= f.text_field(:active, class: 'form-control', placeholder: 'Status') %></td>
+    </tr>
+  </tbody>
+</table>

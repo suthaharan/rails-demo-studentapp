@@ -1,0 +1,31 @@
+<h1>Teachers#show</h1>
+
+<div class="btn btn-primary">
+   <%= link_to('List Teachers', teachers_path, :class=> 'btn-outline-success back-link') %>
+</div>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Name</th>
+      <td><%= @teacher.name %></td>
+    </tr>
+    <tr>
+      <th scope="row">Position</th>
+      <td><%= @teacher.position %></td>
+    </tr>
+    <tr>
+      <th scope="row">Student #</th>
+      <td><%= @teacher.students.size %></td>
+    </tr>
+    <tr>
+      <th scope="row">Status</th>
+      <td><%= @teacher.active ? 'Active':'Inactive' %></td>
+    </tr>
+  </tbody>
+</table>

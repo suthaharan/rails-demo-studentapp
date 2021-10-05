@@ -1,0 +1,24 @@
+<h1>Teachers#delete</h1>
+<%= form_for(@teacher, :method => 'delete') do |f| %>
+<div class="confirm">
+    Are you sure you want to delete the record?
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Name</th>
+      <td><%= @teacher.name %></td>
+    </tr>
+</table>
+</div>
+<div class="form-buttons">
+    <%= f.submit("Delete Teacher") %>
+</div>
+
+<% end %>
+
